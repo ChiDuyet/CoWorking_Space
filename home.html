@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>CoWorking Space</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>CoWorking Space</h1>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Chào mừng đến với không gian làm việc chung hiện đại!</h2>
+      <p>Chúng tôi cung cấp không gian linh hoạt, tiện nghi và dễ đặt chỗ cho bạn.</p>
+    </section>
+
+    <section class="forms">
+      <div class="form-card">
+        <h3>Đăng ký Khách hàng</h3>
+        <form action="register.php" method="POST">
+          <input type="text" name="fullname" placeholder="Họ tên" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="password" name="password" placeholder="Mật khẩu" required>
+          <button type="submit">Đăng ký</button>
+        </form>
+      </div>
+
+      <div class="form-card">
+        <h3>Đăng nhập</h3>
+        <form action="login.php" method="POST">
+          <select name="role" required>
+            <option value="">-- Chọn vai trò --</option>
+            <option value="admin">Quản trị viên</option>
+            <option value="receptionist">Lễ tân</option>
+            <option value="customer">Khách hàng</option>
+          </select>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="password" name="password" placeholder="Mật khẩu" required>
+          <button type="submit">Đăng nhập</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CoWorking Space. All rights reserved.</p>
+  </footer>
+</body>
+</html>
